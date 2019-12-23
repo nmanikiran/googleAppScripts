@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Google App Script with Sheets</title>
+  </head>
+  <body>
+    <section class="main">
+      <form class="post-form" onsubmit="savePost(event)">
+        <h2>Post Form</h2>
+        <p>This repo is to use `Google App Script` to get and add data to google sheets</p>
+        <label for="title">Post Title</label>
+        <input
+          id="title"
+          type="text"
+          name="title"
+          placeholder="Enter title"
+          required
+        />
+        <label for="description">Description</label>
+        <textarea
+          name="description"
+          id="description"
+          placeholder="Enter description"
+          required
+        ></textarea>
+        <div class="actions">
+          <button type="submit" class="saver">Save</button>
+          <button type="rest" class="reset">Rest</button>
+        </div>
+      </form>
+      <br />
+      <div>
+        <button class="reload">Load Posts</button>
+        <div class="posts"></div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Made with &#10084; by
+        <a class="myprofile" href="https://github.com/nmanikiran">Mani Kiran</a>
+      </p>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
